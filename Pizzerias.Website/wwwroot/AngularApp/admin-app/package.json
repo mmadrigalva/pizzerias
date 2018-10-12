@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
-    "build-prod": "ng build --prod --no-sourcemap",
+    "build-prod": "ng build --prod -aot=true -e=prod -sm=false -ec=true -oh=none --build-optimizer=true -vc=true",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
