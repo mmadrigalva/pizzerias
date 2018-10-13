@@ -1,10 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'material-theme.scss';
 html,
 body {
-    min-height: 100%;
-    height: 100%;
+	min-height: 100%;
+	height: 100%;
+	color: #525151 !important;
+	font-family: Roboto;
 }
 
 body {
-    background-color: #f3f3f3;
+	background-color: #f3f3f3;
+	margin: 0px;
 }

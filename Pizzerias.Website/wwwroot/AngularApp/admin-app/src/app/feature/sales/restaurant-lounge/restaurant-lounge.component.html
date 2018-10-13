@@ -1,0 +1,3 @@
+<div class="tables-list">
+  <restaurant-table *ngFor="let table of tables" [table]="table" (onClickTable)="clickTable($event)"></restaurant-table>
+</div>

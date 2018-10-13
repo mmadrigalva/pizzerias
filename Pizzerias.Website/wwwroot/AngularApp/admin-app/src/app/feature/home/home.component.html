@@ -1,0 +1,8 @@
+<div class="home-wrapper">
+  <div class="pizzerias-icon">
+    <img src="/assets/icons/pizzerias-icon.png">
+  </div>
+  <div class="home-cards-wrapper">
+    <home-card *ngFor="let option of homeOptions" [option]="option" (onClickOption)="clickOption($event)"></home-card>
+  </div>
+</div>

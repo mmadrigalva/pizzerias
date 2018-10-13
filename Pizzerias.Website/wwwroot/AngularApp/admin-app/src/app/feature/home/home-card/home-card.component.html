@@ -1,0 +1,11 @@
+<mat-card class="option-card" (click)="clickOption()">
+  <mat-card-content class="card-content">
+    <div class="card-icon">
+      <img [src]="option.iconPath">
+    </div>
+    <div class="card-info">
+      <span class="title">{{option.title}}</span>
+      <span *ngIf="hasSubtitle" class="sub-title">{{option.subtitle}}</span>
+    </div>
+  </mat-card-content>
+</mat-card>

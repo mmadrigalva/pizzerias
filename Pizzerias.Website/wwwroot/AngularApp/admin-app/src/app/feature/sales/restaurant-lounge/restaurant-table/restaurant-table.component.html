@@ -1,0 +1,11 @@
+<mat-card class="table-card" (click)="clickTable()">
+  <mat-card-content class="card-content">
+    <span class="title">{{table.name}}</span>
+    <div class="card-icon">
+      <img [src]="table.iconPath">
+    </div>
+    <div class="card-info">
+      <span *ngIf="hasDescription" class="description">{{table.description}}</span>
+    </div>
+  </mat-card-content>
+</mat-card>

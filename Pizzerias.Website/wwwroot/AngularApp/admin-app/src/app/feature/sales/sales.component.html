@@ -1,0 +1,18 @@
+<mat-sidenav-container class="sales-container">
+  <mat-sidenav #sidenav mode="over" [(opened)]="showSideNav">
+    <table-invoice *ngIf="showSideNav" [table]="selectedTable" (onNewOrderClick)="newOrderClick($event)"></table-invoice>
+  </mat-sidenav>        
+  <mat-sidenav-content>
+      <div class="sales-wrapper">
+          <app-header [option]="salesOption"></app-header>
+          <ng-container [ngSwitch]="selectedSaleStep">
+              <div *ngSwitchCase="saleSteps.restaurantLounge" class="sales-content-wrapper">
+                  <restaurant-lounge (onClickTable)="clickTable($event)"></restaurant-lounge>
+              </div>
+              <div *ngSwitchCase="saleSteps.menu" class="menu-content-wrapper">
+                <app-menu></app-menu>
+              </div>
+            </ng-container>
+        </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

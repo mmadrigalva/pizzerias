@@ -1,0 +1,13 @@
+<div class="header-wrapper header-background" *ngIf="showHeader">
+  <div class="header-content">
+    <div class="icon">
+      <img [src]="option.iconPath">
+    </div>
+    <div class="title">
+      <span>{{option.title}}</span>
+    </div>
+    <div class="pizzerias-icon" (click)="clickPizzeriasIcon()">
+      <img src="/assets/icons/pizzerias-icon.png">
+    </div>
+  </div>
+</div>

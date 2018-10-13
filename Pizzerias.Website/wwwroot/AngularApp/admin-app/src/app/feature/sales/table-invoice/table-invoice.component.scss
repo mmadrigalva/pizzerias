@@ -1,0 +1,16 @@
+.table-invoice-wrapper {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 20px;
+	height: calc(100% - 40px);
+	.invoice-options {
+		height: 200px;
+		display: flex;
+		align-items: center;
+		.option-button {
+			height: 50px;
+		}
+	}
+}
